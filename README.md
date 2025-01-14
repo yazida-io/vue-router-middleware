@@ -1,6 +1,6 @@
 # Vue Router Middleware
 
-`vue-router-middleware` is a lightweight and flexible middleware system for Vue Router in Vue 3 applications. It allows you to define global or inline middleware for route navigation, enabling advanced use cases such as authentication, logging, or other route-specific logic.
+`@yazida/vue-router-middleware` is a lightweight and flexible middleware system for Vue Router in Vue 3 applications. It allows you to define global or inline middleware for route navigation, enabling advanced use cases such as authentication, logging, or other route-specific logic.
 
 ---
 
@@ -9,7 +9,14 @@
 Install the package via npm:
 
 ```bash
-pnpm add vue-router-middleware
+# PNPM
+pnpm add @yazida/vue-router-middleware
+
+# YARN
+yarn add @yazida/vue-router-middleware
+
+# NPM
+npm install @yazida/vue-router-middleware
 ```
 
 ---
@@ -29,7 +36,7 @@ pnpm add vue-router-middleware
 You can register middleware globally for reuse across your application:
 
 ```typescript
-import { registerMiddleware } from 'vue-router-middleware';
+import { registerMiddleware } from '@yazida/vue-router-middleware';
 
 // Example: Authentication middleware
 registerMiddleware('auth', ({ to, next }) => {
@@ -50,7 +57,7 @@ Add middleware to your routes using the `meta.middleware` property:
 
 ```typescript
 import { createRouter, createWebHistory } from 'vue-router';
-import { createVueRouterMiddleware } from 'vue-router-middleware';
+import { createVueRouterMiddleware } from '@yazida/vue-router-middleware';
 
 const routes = [
     {
