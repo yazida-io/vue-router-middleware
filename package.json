@@ -1,0 +1,31 @@
+{
+  "name": "@yazida/vue-router-middleware",
+  "version": "1.0.0",
+  "description": "A flexible middleware system for Vue Router.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yazida-io/vue-router-middleware.git"
+  },
+  "keywords": [
+    "vue-router",
+    "middleware",
+    "vue3"
+  ],
+  "author": "Mouctar DIALLO <mouctar@yazida.io>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "vue": "^3.0.0",
+    "vue-router": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.6",
+    "typescript": "^5.7.3",
+    "vue-router": "^4.0.0"
+  }
+}
